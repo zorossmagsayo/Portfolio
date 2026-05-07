@@ -1,20 +1,18 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const toggle = document.getElementById('theme-toggle');
-    const updateTheme = (isLight) => {
-        document.body.classList.toggle('light-mode', isLight);
-        toggle.src = isLight ? 'night.png' : 'night.png';
-        localStorage.setItem('theme', isLight ? 'light' : 'dark');
-    };
-    updateTheme(localStorage.getItem('theme') === 'light');
-    toggle?.addEventListener('click', () => updateTheme(document.body.classList.toggle('light-mode')));
+const setTheme = (isLight) => {
+    document.body.classList.toggle('light-mode', isLight);
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+};
+
+setTheme(localStorage.getItem('theme') === 'light');
+
+document.getElementById('theme-toggle')?.addEventListener('click', () => {
+    setTheme(!document.body.classList.contains('light-mode'));
 });
 
-
-
-document.querySelectorAll(".portfolio-card").forEach((card) => {
-    card.addEventListener("mouseleave", () => {
-        card.querySelectorAll(".project-modal[open]").forEach((modal) => {
-            modal.removeAttribute("open");
+document.querySelectorAll('.portfolio-card').forEach((card) => {
+    card.addEventListener('mouseleave', () => {
+        card.querySelectorAll('.project-modal[open]').forEach((modal) => {
+            modal.open = false;
         });
     });
 });
