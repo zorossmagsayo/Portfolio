@@ -1,0 +1,122 @@
+.educ-container {
+    display: grid;
+    gap: 20px;
+    width: 70%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.education-details {
+    width: 100%;
+    padding: 15px;
+    background: #000435;
+    border: 2px solid #00d4ff; /* Transparent border to show gradient */
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    display: block;
+    line-height: 30px;
+
+}
+
+
+.educ-card {
+    display: flex;
+}
+
+h4 {
+    color: #00d4ff;
+}
+.grad img{
+    filter: invert(1) brightness(2);
+    transition: all 0.5 ease;
+}
+
+.grad img:hover{
+    transform: scale(1.05);
+}
+.grad {
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.education-details:hover {
+    transform: translateX(5px);
+    box-shadow: 0 12px 30px rgba(0, 212, 255, 0.3);
+}
+
+.education-details h3 {
+    font-size: 30px;
+}
+
+.education-details h4{
+    font-size: 20px;
+    color: #00d4ff;
+}
+
+.education-details p {
+    color: #d0d0d0;
+}
+
+body.light-mode .education-details {
+    background: #b7e0ff;
+    border: 2px solid #090979;
+}
+
+body.light-mode .education-details:hover {
+    box-shadow: 0 12px 30px rgba(9, 9, 121, 0.4);
+}
+
+body.light-mode .education-details h4{
+    font-size: 20px;
+    color: #090979;
+}
+
+body.light-mode h4 {
+    color: #090979;
+}
+
+body.light-mode .grad img{
+    filter: invert(0) brightness(0);
+    transition: all 0.5 ease;
+}
+
+body.light-mode .education-details p {
+    color: #656565;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .educ-container {
+        width: 90%;
+        gap: 15px;
+    }
+
+    .educ-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grad {
+        gap: 15px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .education-details {
+        padding: 15px;
+    }
+
+    .education-details h3 {
+        font-size: 24px;
+    }
+
+    .education-details h4 {
+        font-size: 16px;
+    }
+
+    .education-details p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,134 @@
+/*=======ABOUT==========*/
+
+.aboutme-container {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.aboutme-img {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 5px solid #00d4ff;
+    margin-inline-start: 70px;
+    animation: float 5s ease-in-out infinite;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+body.light-mode .aboutme-img{
+    border: 5px solid #090979;
+}
+
+.overview {
+    font-size: 25px;
+    color: #00d4ff;
+    margin-block: 10px;
+}
+
+.aboutme-p {
+    text-align: left;
+    width: 40rem;
+    margin-inline-start: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: left;
+    align-items: center;
+    font-size: 20px;
+}
+
+.about-tags{
+    display: flex;
+    gap: 20px;
+}
+.about-tag{
+    display: flex;
+    border: 2px solid #00d4ff;
+    padding: 20px 10px;
+    gap: 15px;
+    background: #000435;
+    border-radius: 20px;
+    transition: all 0.3s ease;;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about-tag:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 212, 255, 0.3);
+}
+.tag{
+    font-size: 45px;
+}
+.p{
+    font-size: 15px;
+}
+
+body.light-mode .about-tag{
+    border: 2px solid #090979;
+    background: #b7e0ff;
+
+}
+
+body.light-mode .about-tag:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(9, 9, 121, 0.4);
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .aboutme-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .aboutme-img {
+        margin: 20px 0;
+        width: 250px;
+        height: 250px;
+    }
+
+    .aboutme-p {
+        width: 90%;
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .about-tags {
+        margin-top: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .overview {
+        font-size: 20px;
+    }
+
+    .aboutme-p {
+        font-size: 16px;
+    }
+
+    .about-tag {
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .tag {
+        font-size: 35px;
+    }
+
+    .p {
+        font-size: 12px;
+    }
+}
