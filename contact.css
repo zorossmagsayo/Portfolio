@@ -311,7 +311,7 @@ input:focus, textarea:focus {
 body.light-mode input:focus,
 body.light-mode textarea:focus {
     border-color: #090979;
-    background: rgba(9, 9, 121, 0.04);
+    background: rgba(255,255,255,0.5);
     box-shadow: 0 0 0 3px rgba(9, 9, 121, 0.08);
 }
 
