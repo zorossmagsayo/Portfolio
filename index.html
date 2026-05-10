@@ -22,7 +22,7 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
+            <li><a href="#skills">Services</a></li>
             <li><a href="#project">Project</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><img id="theme-toggle" src="night.png" alt="Theme Toggle" width="25"></li>
@@ -105,7 +105,7 @@
         
     </section>
     <section id="skills">
-        <h1>My Skills</h1>
+        <h1>My Services</h1>
         <div class="card-container">
             <div class="card"><img class="skill-icon" src="front.png" alt="" width="80">
                 <h2>Front-End Development</h2>
@@ -224,41 +224,97 @@
         </section>
 
     <section id="contact">
-        <h1>Contact Me</h1>
-        <div class="contact-container">
-            <div class="left-contact">
-                <div class="lets-build">
-                    <h2>Let's Build Together</h2>
-                    <p>I’m open to new projects, collaborations, or simply sharing ideas. Have something in mind? Use the form below to send me a message—I’ll reply soon.</p>
-                </div>
-                <div class="infos">
-                    <div>
-                        <h2 class="info">Phone</h2>
-                        <p><i class="fa-solid fa-phone"></i> +63 991 459 5816</p>
+    <h1>Contact Me</h1>
+
+    <div class="contact-wrapper">
+
+        <!-- Top: info cards + form -->
+        <div class="contact-top">
+
+            <!-- Left: info cards -->
+            <div class="contact-info-cards">
+
+                <div class="info-card">
+                    <div class="info-card-icon">
+                        <i class="fa-solid fa-phone"></i>
                     </div>
-                    <div class="info">
-                        <h2>Email</h2>
-                        <p><i class="fa-solid fa-envelope"></i> zorossmagsayo@gmail.com</p>
-                    </div>
-                    <div class="info">
-                        <h2>Location</h2>
-                        <p><i class="fa-solid fa-location-dot"></i> Gitagum, Misamis Oriental</p>
+                    <div class="info-card-text">
+                        <span class="info-card-label">Phone</span>
+                        <span class="info-card-value">+63 991 459 5816</span>
                     </div>
                 </div>
+
+                <div class="info-card">
+                    <div class="info-card-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="info-card-text">
+                        <span class="info-card-label">Email</span>
+                        <span class="info-card-value">zorossmagsayo@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-card-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="info-card-text">
+                        <span class="info-card-label">Location</span>
+                        <span class="info-card-value">Gitagum, Misamis Oriental</span>
+                    </div>
+                </div>
+
+                <div class="availability-card">
+                    <div class="avail-dot"></div>
+                    <span class="avail-text">Available for new projects</span>
+                </div>
+
             </div>
 
+            <!-- Right: form -->
             <div class="form">
-                <h2>Send Me Message Now!</h2>
+                <div class="form-header">
+                    <h2>Send Me a Message</h2>
+                    <p>I'll get back to you as soon as possible.</p>
+                </div>
+
                 <form id="contact-form">
-                    <input type="text" placeholder="Enter Your Name" required>
-                    <input type="email" placeholder="Enter Your Email" required>
-                    <textarea placeholder="Enter Your Message" rows="3" required></textarea>
-                    <button type="submit" class="send-btn">Send Message</button>
+                    <div class="field-group">
+                        <label for="c-name">Your Name</label>
+                        <input type="text" id="c-name" placeholder="Your name" required>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="c-email">Email Address</label>
+                        <input type="email" id="c-email" placeholder="your@email.com" required>
+                    </div>
+
+                    <div class="field-group full">
+                        <label for="c-msg">Message</label>
+                        <textarea id="c-msg" placeholder="Tell me what you have in mind…" required></textarea>
+                    </div>
+
+                    <div class="form-footer">
+                        <button type="submit" class="send-btn">
+                            Send Message
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
                 </form>
             </div>
+
         </div>
-        
-    </section>
+
+        <!-- Bottom: tagline -->
+        <div class="contact-tagline">
+            <p>
+                I'm open to <span>new projects</span>, collaborations, or simply sharing ideas. Have something in mind? Use the form above to send me a message<br>— I'll reply soon.
+            </p>
+        </div>
+
+    </div>
+</section>
+
 
     <footer>
         <p>&copy; 2026 Zoross Magsayo. All rights reserved.</p>

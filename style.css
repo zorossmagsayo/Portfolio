@@ -143,6 +143,25 @@ body.light-mode h1 {
     color: #000435;
 }
 
+footer {
+    background: #000435;
+    color: #e1e1e1;
+    border-top: 2px solid #00d4ff;
+    text-align: center;
+    padding: 24px 50px;
+}
+
+footer p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+body.light-mode footer {
+    background: #b7e0ff;
+    color: #000435;
+    border-top-color: #090979;
+}
+
 @media (max-width:768px){
     nav {
         flex-direction: column;
@@ -180,6 +199,14 @@ body.light-mode h1 {
     h1 {
         font-size: 2rem;
         margin-bottom: 20px;
+    }
+
+    footer {
+        padding: 18px 20px;
+    }
+
+    footer p {
+        font-size: 0.85rem;
     }
 
 }
